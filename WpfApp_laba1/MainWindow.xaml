@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBox Text="1 лаба" TextWrapping="Wrap" Width="180" FontSize ="50"/>
 
     </Grid>
 </Window>
