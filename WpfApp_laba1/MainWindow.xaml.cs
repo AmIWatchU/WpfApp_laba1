@@ -27,7 +27,15 @@ namespace WpfApp_laba1
 
         private void BtnOk_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Привіт, " + name_box.Text + " з групи " + group_box.Text );
+            if (name_box.Text.Length == 0)
+            {
+                MessageBox.Show("Введіть ваше ім'я, будь ласка!", "Error!");
+                name_box.Focus();
+                return;
+
+            }
+            MessageBox.Show("Привіт, " + name_box.Text + " з групи " + group_box.Text);
+
         }
 
         private void BtnCancel_Click(object sender, RoutedEventArgs e)
