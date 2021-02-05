@@ -24,5 +24,16 @@ namespace WpfApp_laba1
         {
             InitializeComponent();
         }
+
+        private void BtnOk_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Привіт, " + name_box.Text + " з групи " + group_box.Text );
+        }
+
+        private void BtnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }
