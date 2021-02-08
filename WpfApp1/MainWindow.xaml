@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Calculator" Height="400" Width="700" FontSize="35">
     <Grid>
+        
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+            <TextBox Text="1st number: " Height="50" Width="200">
+
+            </TextBox>
+            <TextBox Text="2nd number: " Height="50" Width="200">
+
+            </TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <TextBox x:Name="a" Height="50" Width="150">
+
+                </TextBox>
+                <TextBox x:Name="b" Height="50" Width="150">
+
+                </TextBox>
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Button Content="+" Width="102"/>
+            <Button Content="-" Width="102"/>
+            <Button Content="/" Width="102"/>
+            <Button Content="*" Width="102"/>
+            <Button Content="Button" Width="102"/>
+            <Button Content="Button" Width="102"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Vertical">
+            <Button Content="+" Width="102"/>
+            <Button Content="-" Width="102"/>
+            <Button Content="/" Width="102"/>
+            <Button Content="*" Width="102"/>
+            <Button Content="Button" Width="102" Click="Button_Click"/>
+            <Button Content="Button" Width="102"/>
+        </StackPanel>
 
     </Grid>
 </Window>
